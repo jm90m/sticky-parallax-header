@@ -43,8 +43,8 @@ export interface SharedPredefinedHeaderProps {
   headerHeight?: StickyParallaxHeaderProps['headerHeight'];
   headerSize?: StickyParallaxHeaderProps['headerSize'];
   keyboardShouldPersistTaps?: StickyParallaxHeaderProps['keyboardShouldPersistTaps'];
-  onMomentumScrollBegin?: StickyParallaxHeaderProps['onMomentumScrollBegin'];
-  onMomentumScrollEnd?: StickyParallaxHeaderProps[' onMomentumScrollEnd'];
+  onMomentumScrollBegin?: any;
+  onMomentumScrollEnd?: any;
   parallaxHeight?: StickyParallaxHeaderProps['parallaxHeight'];
   refreshControl?: StickyParallaxHeaderProps['refreshControl'];
   scrollEvent?: StickyParallaxHeaderProps['scrollEvent'];
@@ -65,7 +65,7 @@ export interface RenderBody {
   children?: ReactNode;
 }
 
-type Props = TabbedHeaderProps | AvatarHeaderProps | DetailsHeaderProps | StickyParallaxHeaderProps;
+type Props = TabbedHeaderProps | AvatarHeaderProps | DetailsHeaderProps | StickyParallaxHeaderProps | any;
 
 const StickyParallaxHeader: VFC<Props> = (props: Props) => {
   switch (props.headerType) {
