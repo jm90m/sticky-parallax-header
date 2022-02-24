@@ -113,7 +113,7 @@ class TabbedHeader extends React.Component<TabbedHeaderProps, State> {
   };
 
   renderTabbedForeground = (scrollY: Animated.ValueXY) => {
-    const { title, titleStyle, foregroundImage } = this.props;
+    const { title, titleStyle, foregroundImage, foregroundStyles, messageContainerStyle, logoImageStyle } = this.props;
     const messageStyle = [styles.message, titleStyle];
 
     const startSize = constants.responsiveWidth(18);
@@ -144,7 +144,7 @@ class TabbedHeader extends React.Component<TabbedHeaderProps, State> {
           <Animated.View style={{ opacity: imageOpacity }}>
             <Animated.Image
               source={foregroundImage}
-              style={[styles.profilePic, { width: imageSize, height: imageSize }]}
+              style={[styles.profilePic, { width: imageSize, height: imageSize }, logoImageStyle]}
             />
           </Animated.View>
         );
@@ -154,9 +154,9 @@ class TabbedHeader extends React.Component<TabbedHeaderProps, State> {
     };
 
     return (
-      <View style={styles.foreground}>
+      <View style={[styles.foreground, foregroundStyles]}>
         {renderImage()}
-        <Animated.View style={[styles.messageContainer, { opacity: titleOpacity }]}>
+        <Animated.View style={[styles.messageContainer, { opacity: titleOpacity }, messageContainerStyle]}>
           <Text style={messageStyle}>{title}</Text>
         </Animated.View>
       </View>

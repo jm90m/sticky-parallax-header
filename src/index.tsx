@@ -44,7 +44,7 @@ export interface SharedPredefinedHeaderProps {
   headerSize?: StickyParallaxHeaderProps['headerSize'];
   keyboardShouldPersistTaps?: StickyParallaxHeaderProps['keyboardShouldPersistTaps'];
   onMomentumScrollBegin?: StickyParallaxHeaderProps['onMomentumScrollBegin'];
-  onMomentumScrollEnd?: StickyParallaxHeaderProps['onMomentumScrollEnd'];
+  onMomentumScrollEnd?: StickyParallaxHeaderProps[' onMomentumScrollEnd'];
   parallaxHeight?: StickyParallaxHeaderProps['parallaxHeight'];
   refreshControl?: StickyParallaxHeaderProps['refreshControl'];
   scrollEvent?: StickyParallaxHeaderProps['scrollEvent'];
