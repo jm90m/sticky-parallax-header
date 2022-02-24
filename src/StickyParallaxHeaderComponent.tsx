@@ -73,8 +73,8 @@ export interface StickyParallaxHeaderProps {
   scrollRef: (t: ScrollView) => void | MutableRefObject<ScrollView>;
   keyboardShouldPersistTaps: ScrollViewProps['keyboardShouldPersistTaps'];
   refreshControl: ScrollViewProps['refreshControl'];
-  onMomentumScrollEnd: ScrollViewProps['onMomentumScrollEnd'];
-  onMomentumScrollBegin: ScrollViewProps['onMomentumScrollBegin'];
+  onMomentumScrollEnd: any;
+  onMomentumScrollBegin: any;
   decelerationRate: 'fast' | 'normal';
   tabUnderlineColor: string | null;
   tabsContainerHorizontalPadding?: number;
