@@ -48,6 +48,9 @@ export interface TabbedHeaderProps extends SharedPredefinedHeaderProps {
   tabsContainerHorizontalPadding?: StickyParallaxHeaderProps['tabsContainerHorizontalPadding'];
   title?: string;
   titleStyle?: StyleProp<TextStyle>;
+  foregroundStyles?: any;
+  messageContainerStyle?: any;
+  logoImageStyle?: any;
 }
 
 type State = {
